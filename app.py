@@ -9,7 +9,7 @@ if(add_selectbox == 'Home'):
   st.image('https://static.businessworld.in/article/article_extra_large_image/1600858456_HulSrV_Flipkart.jpg')
 
   ip = st.text_input('Enter your review')
-  p = model.predict([ip])
+  op = model.predict([ip])
   if st.button('Predict'):
     st.header(op[0])
     if(op[0]=='Good'):
